@@ -1,0 +1,110 @@
+<!--
+    Name: Elliot Runions
+    Course: Software Development 20S
+    Teacher: Mr. Hardman
+    School: Pembina Trails Early College
+    Date Last Modified: 20XX
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <style>
+            nav ul{height:200px; width:20%; overflow:hidden; overflow-y:scroll;}
+            body{background-color:rgb(0, 0, 0); font-family: Lucida Console, Courier New, monospace; color: rgb(255, 190, 222)}
+            /* Scrollmenu structure code courtesy of w3schools */
+            div.scrollmenu {
+            background-color: rgb(54, 0, 65);
+            overflow: auto;
+            white-space: nowrap;
+            }
+
+            div.scrollmenu a {
+            display: inline-block;
+            color: rgb(196, 119, 157);
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            }
+
+            div.scrollmenu a:hover {
+            background-color: rgb(138, 0, 108);
+            }
+
+            /* Scrollbar customization */
+            ::-webkit-scrollbar {
+            width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+            background: rgb(54, 0, 65); 
+            }
+            
+            ::-webkit-scrollbar-thumb {
+            background: rgb(138, 0, 108); 
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+            background: rgb(196, 119, 157); 
+            }
+
+            #temptable {
+            color: rgb(196, 119, 157);
+            border-collapse: collapse;
+            width: 100%;
+            }
+
+            #temptable td, #temptable th {
+            border: 1px solid rgb(196, 119, 157);
+            padding: 8px;
+            }
+
+            #temptable tr:nth-child(even){background-color: rgb(0,0,0);}
+
+            #temptable tr:hover {background-color: rgb(138, 0, 108);}
+
+            #temptable th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: rgb(54, 0, 65);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            <b>Impactful Musicians</b>
+        </h1>
+        <div class="scrollmenu" style="text-align: center;">
+            <a href="index.html">Index</a>
+            <a href="daft-punk.html">Daft Punk</a>
+            <a href="hirokazu-tanaka.html">Hirokazu Tanaka</a>
+        </div>
+
+        <h2>Description</h2>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This page details musicians that have had an impact on me throughout my life.
+        </p>
+
+        <h2>Table</h2>
+        <table style="width:60%" id="temptable">
+            <tr>
+                <th>Artist</th>
+                <th>Influential Works</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Daft Punk</td>
+                <td>Homework<br/>Discovery<br/>Random Access Memories<br/></td>
+                <td>1993<br/>2001<br/>2013</td>
+            </tr>
+            <tr>
+                <td>Hirokazu Tanaka</td>
+                <td>Earthbound</td>
+                <td>1994</td>
+            </tr>
+        </table>
+    </body>
+</html>
