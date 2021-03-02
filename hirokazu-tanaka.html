@@ -5,7 +5,17 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
         <style>
-            nav ul{height:200px; width:20%; overflow:hidden; overflow-y:scroll;}
+            #form{
+                border: 1px solid rgb(190, 247, 255);
+                padding: 20px;
+            }
+            #favouritetracks{
+                height:300px; 
+                width:40%; 
+                overflow:hidden; 
+                overflow-y:scroll; 
+                border: 1px solid rgb(190, 247, 255);
+            }
             body{
             background-color: rgb(0,0,0); 
             font-family: Lucida Console, Courier New, monospace; 
@@ -85,5 +95,43 @@
             The reason I say he's the best video game soundtrack composer is because no one else can really complement the game like he did. 
             His music really makes Earthbound, Earthbound.
         </p>
+        <h2>Naming Track</h2>
+        <p>This is the track that would usually accompany the naming screen, represented by the form below.</p>
+        <nav>
+            <ul type="1" id="favouritetracks">
+            </br>
+                <li><b><a href="https://www.youtube.com/embed/OuRBHEa6ZjA" target="yournameplease">Your name, please</a></b></li>
+                <li><iframe name="yournameplease" width="560" height="315" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></li>
+            </ul>
+        </nav>
+        <h2>Your Name, Please</h2>
+        <p>This form mimics the opening section of Earthbound: the naming screen.</p>
+        <form method="get" id="form">
+            <!--This section of the form describes 3 radio buttons that allow the user to choose their text speed-->
+            <p>Choose a Text Speed:</p>
+            <label><input type="radio" name="textspeed" value="Fast">Fast</label>
+            <label><input type="radio" name="textspeed" value="Medium" checked="true">Medium</label>
+            <label><input type="radio" name="textspeed" value="Slow">Slow</label>
+            <br/>
+            <br/>
+            <!--Here, the user uses a color selector to select the type of windows they will see-->
+            Choose a Window Flavor:<br/>
+            <input type="color" value="#ffffff">
+            <br/>
+            <br/>
+            <!--This section of the form asks the user to name Ness, and has a text box to do so-->
+            Please Name Him:<br/>
+            <img src="https://lh3.googleusercontent.com/proxy/PlF5YPNOlQG64OBU5aebGm7MmRLH2y3ZQmg63LGCLU7BMBnrZ65g1_eMWd7rWk_K8arqsVzmaGyYxWzqJPUqajJxLgJ4_DI0" width="18" height="32">
+            <input type="text" placeholder="Ness" size="15" maxlength="7"/>
+            <br/>
+            <br/>
+            <!--This section of the form uses a dropdown menu to allow the user to select their favourite food-->
+            Your Favourite Food:
+            <select name="favfood" style="background-color:paleturquoise; color: darkblue">
+            <option value="steak" style="background-color:paleturquoise; color: darkblue">Steak</option>
+            <option value="pie" style="background-color:paleturquoise; color: darkblue">Pie</option>
+            <option value="pasta" style="background-color:paleturquoise; color: darkblue">Pasta</option>
+            </select>
+        </form>
     </body>
 </html>
